@@ -97,3 +97,131 @@ If you use the reference to get unstuck, compare it against your own code and ma
 - what condition or assumption the implementation depends on.
 
 The checkpoint-question answers are not supplied as a model answer sheet.
+
+## Optional Extensions — If You Finish Lab 0 Early
+
+These extensions are **not required** and are not graded.
+
+Do them if you finish the core Lab 0 tasks and want to investigate further before Thursday. They are designed to reinforce the course workflow and prepare you for our next topic without requiring you to start Lab 1 early.
+
+You do not need to complete every extension. Choose one or more that seem useful.
+
+### Extension A — Watch `FindById` with the debugger
+
+Set a breakpoint inside `FindById`.
+
+Run or debug several searches:
+
+- a player near the beginning of the list;
+- a player near the end;
+- an ID that does not exist.
+
+Step through the loop and observe what changes.
+
+Think about:
+
+- How many players are inspected in each case?
+- What determines when the method stops?
+- Which case makes the method do the most work?
+
+### Extension B — Count the work
+
+Temporarily add a counter to `FindById` so you can see how many players it inspects.
+
+Try searches for:
+
+- the first player;
+- a middle player;
+- the last player;
+- a missing ID.
+
+Record the counts.
+
+Then add or generate more players and repeat.
+
+For example, compare lists containing approximately:
+
+- 10 players;
+- 100 players;
+- 1,000 players.
+
+Before running each case, **predict** what you think will happen.
+
+Do not worry about Big-O notation yet. We will connect these observations to algorithmic complexity on Thursday.
+
+### Extension C — Add another meaningful test
+
+Add one or two tests that are not already present.
+
+Choose the test because it increases your confidence in the behavior, not because you want a larger test count.
+
+Possible areas to think about:
+
+- empty collections;
+- duplicate scores;
+- exact name matching;
+- IDs that do not exist;
+- another edge case you can justify.
+
+Be prepared to explain:
+
+> What failure would this test catch?
+
+### Extension D — Practice a small Git branch
+
+Only do this if the required Lab 0 work is already committed.
+
+Create a short-lived branch for an experiment:
+
+```bash
+git switch -c experiment/lab0-extension
+```
+
+Make one small extension, build/test it, and commit it.
+
+Then return to `main`:
+
+```bash
+git switch main
+```
+
+If you want to keep the experiment:
+
+```bash
+git merge experiment/lab0-extension
+```
+
+If you do not want to keep it, you can simply leave the branch unmerged for now and ask if you are unsure how to remove it safely.
+
+The purpose is to see a branch as a **separate line of commits**, not as something every tiny task must use.
+
+### Extension E — Inspect how the teacher repository was built
+
+Open the course repository on GitHub and inspect its first commits.
+
+Look for the progression from:
+
+1. repository/toolchain;
+2. core model/logic;
+3. runnable application;
+4. automated tests;
+5. lab instructions;
+6. student starter package.
+
+Think about:
+
+- Why might these have been separate commits?
+- Which commits represent useful working checkpoints?
+- How does the history make the development process easier to understand?
+
+### When you are done
+
+You do **not** need to start Lab 1 before Thursday.
+
+Instead, make sure that:
+
+- your required Lab 0 work is complete;
+- your tests are in a state you understand;
+- your work is committed and pushed to GitHub;
+- you have answered the Lab 0 checkpoint questions;
+- you complete the short Thursday preparation before class.
