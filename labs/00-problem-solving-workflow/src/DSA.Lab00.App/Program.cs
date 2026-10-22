@@ -4,7 +4,7 @@ using DSA.Lab00;
 
 List<Player> players = new()
 {
-    new Player(101, "Amina", 120),
+    new Player(101, "Alice", 120),
     new Player(205, "Bo", 85),
     new Player(734, "Cleo", 160),
     new Player(910, "Dani", 105)
