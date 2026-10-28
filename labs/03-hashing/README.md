@@ -24,10 +24,10 @@ The goal is **not** to recreate the full .NET Dictionary implementation. The goa
 ## Run the lab
 
 ```bash
-dotnet restore labs/03-hash-tables-fast-lookup/DSA.Lab03.sln
-dotnet build labs/03-hash-tables-fast-lookup/DSA.Lab03.sln
-dotnet run --project labs/03-hash-tables-fast-lookup/src/DSA.Lab03.App
-dotnet test labs/03-hash-tables-fast-lookup/tests/DSA.Lab03.Tests
+dotnet restore labs/03-hashing/DSA.Lab03.sln
+dotnet build labs/03-hashing/DSA.Lab03.sln
+dotnet run --project labs/03-hashing/src/DSA.Lab03.App
+dotnet test labs/03-hashing/tests/DSA.Lab03.Tests
 ```
 
 ## Task 1 - Inspect linear lookup
